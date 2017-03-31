@@ -51,9 +51,24 @@ table {
 ===========
 */
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 *, *:before, *:after {
-  box-sizing: inherit; }
+  box-sizing: inherit;
+}
 
+section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
+img#profilePicture {
+  width: 200px;
+  height: 200px;
+  border: none;
+  background: #F1F1F1;
+}
