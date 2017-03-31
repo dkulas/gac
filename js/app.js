@@ -13,7 +13,17 @@ function fetchData() {
   .then(data => data.json())
   .then(data => {
     console.log(data);
-    return (data);
+    var name = data.name;
+    var profilePicture = data.avatar_url;
+    var dateJoined = data.created_at;
+    var username = data.login;
+    var website = data.blog;
+    var email = data.email;
+    var company = data.company;
+    var location = data.location;
+    var hireable = data.hireable;
+    var userID = data.id;
+    var bio = data.bio;
   });
 };
 
