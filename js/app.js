@@ -8,6 +8,10 @@ var submitBtn = document.getElementById("submitBtn");
   }
 })();
 
+function getUsername() {
+  return document.getElementById("githubUsernameInput").value;
+};
+
 function fetchData() {
   fetch("https://api.github.com/users/" + getUsername())
   .then(data => data.json())
@@ -25,10 +29,6 @@ function fetchData() {
     var userID = data.id;
     var bio = data.bio;
   });
-};
-
-function getUsername() {
-  return document.getElementById("githubUsernameInput").value;
 };
 
 submitBtn.addEventListener("click", function() {
