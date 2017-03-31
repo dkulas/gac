@@ -16,7 +16,9 @@ function fetchData() {
   fetch("https://api.github.com/users/" + getUsername())
   .then(data => data.json())
   .then(data => {
+
     console.log(data);
+
     var name = data.name;
     var profilePicture = data.avatar_url;
     var dateJoined = data.created_at;
@@ -28,9 +30,29 @@ function fetchData() {
     var hireable = data.hireable;
     var userID = data.id;
     var bio = data.bio;
+
+    document.getElementById("name").innerHTML = name;
+    document.getElementById("profilePicture").src = profilePicture;
+    document.getElementById("dateJoined").innerHTML = "Date Joined: " + dateJoined;
+    document.getElementById("username").innerHTML = "Username: " + username;
+    document.getElementById("website").innerHTML = "Website: " + "<a href="+website+" target='_blank'>Website</a>";
+    document.getElementById("email").innerHTML = "Email: " + email;
+    document.getElementById("company").innerHTML = "Company: " + company;
+    document.getElementById("location").innerHTML = "Location: " + location;
+    document.getElementById("hireable").innerHTML = "Hireable: " + hireable;
+    document.getElementById("userID").innerHTML = "UserID: " + userID;
+    document.getElementById("bio").innerHTML = "Bio: " + bio;
   });
 };
 
+function clearData() {
+  document.getElementsByTagName("h1").innerHTML = "";
+  document.getElementsByTagName("img").innerHTML = "";
+  document.getElementsByTagName("li").innerHTML = "";
+  document.getElementsByTagName("p").innerHTML = "";
+}
+
 submitBtn.addEventListener("click", function() {
   fetchData();
+  clearData();
 });
