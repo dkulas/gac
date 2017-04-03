@@ -1,5 +1,6 @@
 var submitBtn = document.getElementById("submitBtn");
 
+// Check if Fetch is available
 (function checkFetch() {
   if (self.fetch) {
     console.log("Fetch is working");
@@ -8,10 +9,12 @@ var submitBtn = document.getElementById("submitBtn");
   }
 })();
 
+// Isolate Github username
 function getUsername() {
   return document.getElementById("githubUsernameInput").value;
 };
 
+// Fetch Github User Data
 function fetchData() {
   fetch("https://api.github.com/users/" + getUsername())
   .then(data => data.json())
@@ -45,6 +48,7 @@ function fetchData() {
   });
 };
 
+// Clear data on subsequent calls
 function clearData() {
   document.getElementsByTagName("h1").innerHTML = "";
   document.getElementsByTagName("img").innerHTML = "";
@@ -52,6 +56,7 @@ function clearData() {
   document.getElementsByTagName("p").innerHTML = "";
 }
 
+// Initialize program
 submitBtn.addEventListener("click", function() {
   fetchData();
   clearData();
