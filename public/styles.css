@@ -102,4 +102,10 @@ h2#username {
 
 ul {
   line-height: 1.5;
+  font-size: 1.25em;
+}
+
+p#bio {
+  font-size: 1.25em;
+  line-height: 1.5;
 }
