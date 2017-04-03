@@ -36,15 +36,15 @@ function fetchData() {
 
     document.getElementById("name").innerHTML = name;
     document.getElementById("profilePicture").src = profilePicture;
-    document.getElementById("dateJoined").innerHTML = "Date Joined: " + dateJoined;
-    document.getElementById("username").innerHTML = "Username: " + username;
-    document.getElementById("website").innerHTML = "Website: " + website;
-    document.getElementById("email").innerHTML = "Email: " + email;
-    document.getElementById("company").innerHTML = "Company: " + company;
-    document.getElementById("location").innerHTML = "Location: " + location;
-    document.getElementById("hireable").innerHTML = "Hireable: " + hireable;
-    document.getElementById("userID").innerHTML = "UserID: " + userID;
-    document.getElementById("bio").innerHTML = "Bio: " + bio;
+    document.getElementById("dateJoined").innerHTML = "<strong>Date Joined</strong>: " + dateJoined;
+    document.getElementById("username").innerHTML = "<strong>Username</strong>: " + username;
+    document.getElementById("website").innerHTML = "<strong>Website</strong>: " + website;
+    document.getElementById("email").innerHTML = "<strong>Email</strong>: " + email;
+    document.getElementById("company").innerHTML = "<strong>Company</strong>: " + company;
+    document.getElementById("location").innerHTML = "<strong>Location</strong>: " + location;
+    document.getElementById("hireable").innerHTML = "<strong>Hireable</strong>: " + hireable;
+    document.getElementById("userID").innerHTML = "<strong>UserID</strong>: " + userID;
+    document.getElementById("bio").innerHTML = "<strong>Bio</strong>: " + bio;
   });
 };
 

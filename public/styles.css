@@ -59,6 +59,10 @@ html {
   box-sizing: inherit;
 }
 
+strong {
+  font-weight: 700;
+}
+
 section#mainSection {
   position: absolute;
   top: 0;
@@ -81,4 +85,13 @@ img#profilePicture {
 form#getUser {
   text-align: center;
   margin: 20px;
+}
+
+h1#name {
+  font-size: 2em;
+  margin: 0 0 5px 0;
+}
+
+ul {
+  line-height: 1.5;
 }
