@@ -22,30 +22,20 @@ function fetchData() {
 
     console.log(data);
 
-    var name = data.name;
-    var profilePicture = data.avatar_url;
     var dateJoinedFull = data.created_at;
     var dateJoinedPartial = dateJoinedFull.split("T")[0];
-    var username = data.login;
-    var website = data.blog;
-    var email = data.email;
-    var company = data.company;
-    var location = data.location;
-    var hireable = data.hireable;
-    var userID = data.id;
-    var bio = data.bio;
 
-    document.getElementById("name").innerHTML = name;
-    document.getElementById("profilePicture").src = profilePicture;
+    document.getElementById("name").innerHTML = data.name;
+    document.getElementById("profilePicture").src = data.avatar_url;
     document.getElementById("dateJoined").innerHTML = "<strong>Date Joined</strong>: " + dateJoinedPartial;
-    document.getElementById("username").innerHTML = username;
-    document.getElementById("website").innerHTML = "<strong>Website</strong>: " + website;
-    document.getElementById("email").innerHTML = "<strong>Email</strong>: " + email;
-    document.getElementById("company").innerHTML = "<strong>Company</strong>: " + company;
-    document.getElementById("location").innerHTML = "<strong>Location</strong>: " + location;
-    document.getElementById("hireable").innerHTML = "<strong>Hireable</strong>: " + hireable;
-    document.getElementById("userID").innerHTML = "<strong>UserID</strong>: " + userID;
-    document.getElementById("bio").innerHTML = "<strong>Bio</strong>: " + bio;
+    document.getElementById("username").innerHTML = data.login;
+    document.getElementById("website").innerHTML = "<strong>Website</strong>: " + data.blog;
+    document.getElementById("email").innerHTML = "<strong>Email</strong>: " + data.email;
+    document.getElementById("company").innerHTML = "<strong>Company</strong>: " + data.company;
+    document.getElementById("location").innerHTML = "<strong>Location</strong>: " + data.location;
+    document.getElementById("hireable").innerHTML = "<strong>Hireable</strong>: " + data.hireable;
+    document.getElementById("userID").innerHTML = "<strong>UserID</strong>: " + data.id;
+    document.getElementById("bio").innerHTML = "<strong>Bio</strong>: " + data.bio;
   });
 };
 
