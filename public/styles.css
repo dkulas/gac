@@ -58,7 +58,7 @@ html {
   box-sizing: inherit;
 }
 
-section {
+section#mainSection {
   position: absolute;
   top: 0;
   left: 0;
@@ -66,9 +66,18 @@ section {
   bottom: 0;
 }
 
+section#secondarySection {
+  margin: 0 0 0 20px;
+}
+
 img#profilePicture {
   width: 200px;
   height: 200px;
   border: none;
   background: #F1F1F1;
+}
+
+form#getUser {
+  text-align: center;
+  margin: 20px;
 }

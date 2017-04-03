@@ -14,26 +14,28 @@
 <![endif]-->
 
 <body>
-<section>
+<section id="mainSection">
 	<form id="getUser" method="get">
 		<input required type="text" id="githubUsernameInput" placeholder="ex: octocat" autofocus="true" autocomplete="off">
 		<input type="button" form="getUser" value="&#8250;" id="submitBtn">
 	</form>
-	<h1 id="name"></h1>
-	<img src="" id="profilePicture">
-	<article>
-		<ul>
-			<li id="dateJoined"></li>
-			<li id="username"></li>
-			<li id="website"></li>
-			<li id="email"></li>
-			<li id="company"></li>
-			<li id="location"></li>
-			<li id="hireable"></li>
-			<li id="userID"></li>
-		</ul>
-		<p id="bio"></p>
-	</article>
+	<section id="secondarySection">
+		<h1 id="name"></h1>
+		<img src="" id="profilePicture">
+		<article>
+			<ul>
+				<li id="dateJoined"></li>
+				<li id="username"></li>
+				<li id="website"></li>
+				<li id="email"></li>
+				<li id="company"></li>
+				<li id="location"></li>
+				<li id="hireable"></li>
+				<li id="userID"></li>
+			</ul>
+			<p id="bio"></p>
+		</article>
+	</section>
 </section>
 
 <script src="js/app.js"></script>

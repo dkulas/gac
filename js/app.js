@@ -38,11 +38,7 @@ function fetchData() {
     document.getElementById("profilePicture").src = profilePicture;
     document.getElementById("dateJoined").innerHTML = "Date Joined: " + dateJoined;
     document.getElementById("username").innerHTML = "Username: " + username;
-    if (website == null) {
-      document.getElementById("website").innerHTML = "Website:  null";
-    } else {
-      document.getElementById("website").innerHTML = "Website: " + "<a href="+website+" target='_blank'>Website</a>";
-    };
+    document.getElementById("website").innerHTML = "Website: " + website;
     document.getElementById("email").innerHTML = "Email: " + email;
     document.getElementById("company").innerHTML = "Company: " + company;
     document.getElementById("location").innerHTML = "Location: " + location;
