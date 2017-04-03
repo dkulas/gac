@@ -37,7 +37,7 @@ function fetchData() {
     document.getElementById("name").innerHTML = name;
     document.getElementById("profilePicture").src = profilePicture;
     document.getElementById("dateJoined").innerHTML = "<strong>Date Joined</strong>: " + dateJoined;
-    document.getElementById("username").innerHTML = "<strong>Username</strong>: " + username;
+    document.getElementById("username").innerHTML = username;
     document.getElementById("website").innerHTML = "<strong>Website</strong>: " + website;
     document.getElementById("email").innerHTML = "<strong>Email</strong>: " + email;
     document.getElementById("company").innerHTML = "<strong>Company</strong>: " + company;
@@ -57,7 +57,9 @@ function clearData() {
 }
 
 // Initialize program
-submitBtn.addEventListener("click", function() {
+submitBtn.addEventListener("click", function(e) {
+  e.preventDefault();
   fetchData();
   clearData();
 });
+

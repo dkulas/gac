@@ -75,10 +75,14 @@ section#secondarySection {
   margin: 0 0 0 20px;
 }
 
+article {
+  display: inline-block;
+}
+
 img#profilePicture {
   width: 200px;
   height: 200px;
-  border: none;
+  border-radius: 6px;
   background: #F1F1F1;
 }
 
@@ -89,6 +93,10 @@ form#getUser {
 
 h1#name {
   font-size: 2em;
+  margin: 0 0 5px 0;
+}
+
+h2#username {
   margin: 0 0 5px 0;
 }
 
