@@ -24,7 +24,8 @@ function fetchData() {
 
     var name = data.name;
     var profilePicture = data.avatar_url;
-    var dateJoined = data.created_at;
+    var dateJoinedFull = data.created_at;
+    var dateJoinedPartial = dateJoinedFull.split("T")[0];
     var username = data.login;
     var website = data.blog;
     var email = data.email;
@@ -36,7 +37,7 @@ function fetchData() {
 
     document.getElementById("name").innerHTML = name;
     document.getElementById("profilePicture").src = profilePicture;
-    document.getElementById("dateJoined").innerHTML = "<strong>Date Joined</strong>: " + dateJoined;
+    document.getElementById("dateJoined").innerHTML = "<strong>Date Joined</strong>: " + dateJoinedPartial;
     document.getElementById("username").innerHTML = username;
     document.getElementById("website").innerHTML = "<strong>Website</strong>: " + website;
     document.getElementById("email").innerHTML = "<strong>Email</strong>: " + email;
