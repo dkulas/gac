@@ -23,6 +23,8 @@ function fetchData() {
     console.log(data);
 
     var dateJoinedFull = data.created_at;
+    // Only capturing the date
+    // and not the time zone
     var dateJoinedPartial = dateJoinedFull.split("T")[0];
 
     document.getElementById("name").innerHTML = data.name;
