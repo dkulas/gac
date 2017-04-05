@@ -26,6 +26,7 @@ function fetchData() {
     var dateJoinedPartial = dateJoinedFull.split("T")[0];
 
     document.getElementById("name").innerHTML = data.name;
+    document.getElementById("profilePicture").style.display = "block";
     document.getElementById("profilePicture").src = data.avatar_url;
     document.getElementById("dateJoined").innerHTML = "<strong>Date Joined</strong>: " + dateJoinedPartial;
     document.getElementById("username").innerHTML = data.login;

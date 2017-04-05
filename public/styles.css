@@ -71,8 +71,13 @@ section#mainSection {
   bottom: 0;
 }
 
+div {
+  text-align: center;
+}
+
 section#secondarySection {
-  margin: 0 0 0 20px;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 article {
@@ -84,6 +89,7 @@ img#profilePicture {
   height: 200px;
   border-radius: 6px;
   background: #F1F1F1;
+  display: none;
 }
 
 form#getUser {
@@ -94,18 +100,22 @@ form#getUser {
 h1#name {
   font-size: 2em;
   margin: 0 0 5px 0;
+  text-align: left;
 }
 
 h2#username {
   margin: 0 0 5px 0;
+  text-align: left;
 }
 
 ul {
   line-height: 1.5;
-  font-size: 1.25em;
+  font-size: 1.35em;
+  text-align: left;
 }
 
 p#bio {
-  font-size: 1.25em;
+  font-size: 1.35em;
   line-height: 1.5;
+  text-align: left;
 }
