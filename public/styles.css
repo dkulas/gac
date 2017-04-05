@@ -99,10 +99,18 @@ form#getUser {
 
 input#githubUsernameInput {
   font-size: 1.5em;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
 }
 
 #submitBtn {
   font-size: 1.5em;
+  background: #FFF;
+  outline: none;
+  border: none;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 h1#name {
