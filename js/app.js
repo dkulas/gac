@@ -39,8 +39,19 @@ function fetchData() {
     document.getElementById("profilePicture").src = data.avatar_url;
     document.getElementById("dateJoined").innerHTML = "<strong>Date Joined</strong>: " + dateJoinedPartial;
     document.getElementById("username").innerHTML = data.login;
-    document.getElementById("website").innerHTML = "<strong>Website</strong>: " + data.blog;
-    document.getElementById("email").innerHTML = "<strong>Email</strong>: " + data.email;
+
+    if (data.blog) {
+      document.getElementById("website").innerHTML = "<strong>Website</strong>: " + "<a target=_blank href="+data.blog+">Website</a>";
+    } else {
+      document.getElementById("website").innerHTML = "<strong>Website</strong>: not available";
+    }
+
+    if (data.email) {
+      document.getElementById("email").innerHTML = "<strong>Email</strong>: " + data.email;
+    } else {
+      document.getElementById("email").innerHTML = "<strong>Email</strong>: not available";
+    }
+
     document.getElementById("company").innerHTML = "<strong>Company</strong>: " + data.company;
     document.getElementById("location").innerHTML = "<strong>Location</strong>: " + data.location;
     document.getElementById("hireable").innerHTML = "<strong>Hireable</strong>: " + data.hireable;
