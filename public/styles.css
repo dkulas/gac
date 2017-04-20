@@ -81,7 +81,8 @@ section#secondarySection {
 }
 
 article {
-  display: inline-block;
+  display: block;
+  margin: 10px;
 }
 
 img#profilePicture {
@@ -127,12 +128,6 @@ h2#username {
 
 ul {
   line-height: 1.5;
-  font-size: 1.35em;
   text-align: left;
-}
-
-p#bio {
-  font-size: 1.35em;
-  line-height: 1.5;
-  text-align: left;
+  display: inline-block;
 }

@@ -22,6 +22,10 @@ function fetchData() {
 
     console.log(data);
 
+    if (data.message == "Not Found") {
+      alert("This user does not exist");
+    }
+
     var dateJoinedFull = data.created_at;
     // Only capturing the date
     // and not the time zone
