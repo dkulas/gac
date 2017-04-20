@@ -74,4 +74,3 @@ submitBtn.addEventListener("click", function(e) {
   fetchData();
   clearData();
 });
-
