@@ -22,8 +22,11 @@ function fetchData() {
 
     console.log(data);
 
+    // Error-Alert for when
+    // users enter invalid
+    // GitHub account name
     if (data.message == "Not Found") {
-      alert("This user does not exist");
+      alert("This user does not exist.  Please try again");
     }
 
     var dateJoinedFull = data.created_at;
